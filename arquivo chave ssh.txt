@@ -1,0 +1,7 @@
+ ssh-keygen -t rsa -f 'C:/Users/fredd/OneDrive/Documentos/projeto-React/.ssh/githubreact' -C 'freddy181208@hotmail.com'Documentos\projeto-React\.ssh"
+
+eval "$(ssh-agent -s)"  gera Agent pid 457
+
+ssh-add C:/Users/fredd/OneDrive/Documentos/projeto-React/.ssh/githubreact
+
+
