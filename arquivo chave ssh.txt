@@ -4,4 +4,22 @@ eval "$(ssh-agent -s)"  gera Agent pid 457
 
 ssh-add C:/Users/fredd/OneDrive/Documentos/projeto-React/.ssh/githubreact
 
+# Criar chaves ssh
+ssh-keygen -t rsa -f "/c/Users/seu-usuario/.ssh/nome-chave" -C 'seu-email@email.com'
+
+# Quando fechar o terminal preciso executar isso
+eval "$(ssh-agent -s)"
+ssh-add /c/Users/seu-usuario/.ssh/nome-chave
+
+# Iniciando o git
+git init
+git config --global user.name "SEU NOME"
+git config --global user.email "seu-email@email.com"
+git remote add origin git@github.com:CAMINHO-COPIADO-DO-GITHUB-SSH
+
+# Editei
+git add .
+git commit -m 'MENSAGEM'
+git push origin master
+
 
